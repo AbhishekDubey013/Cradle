@@ -10,7 +10,7 @@
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
     "clean": "turbo run clean && rm -rf node_modules",
-    "start:orchestrator": "NODE_PATH=./node_modules:./apps/orchestrator/node_modules:$NODE_PATH cd apps/orchestrator && node dist/index.js"
+    "start:orchestrator": "cd apps/orchestrator && NODE_PATH=../../node_modules:./node_modules:$NODE_PATH node dist/index.js"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
